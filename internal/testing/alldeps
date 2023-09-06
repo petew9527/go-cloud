@@ -62,7 +62,7 @@ github.com/fsnotify/fsnotify
 github.com/go-jose/go-jose/v3
 github.com/go-sql-driver/mysql
 github.com/gogo/protobuf
-github.com/golang-jwt/jwt/v4
+github.com/golang-jwt/jwt/v5
 github.com/golang/groupcache
 github.com/golang/protobuf
 github.com/golang/snappy
@@ -104,7 +104,6 @@ github.com/nats-io/nkeys
 github.com/nats-io/nuid
 github.com/pierrec/lz4/v4
 github.com/pkg/browser
-github.com/pkg/errors
 github.com/prometheus/prometheus
 github.com/rabbitmq/amqp091-go
 github.com/rcrowley/go-metrics
@@ -119,7 +118,6 @@ go.etcd.io/etcd/client/pkg/v3
 go.etcd.io/etcd/client/v3
 go.mongodb.org/mongo-driver
 go.opencensus.io
-go.uber.org/atomic
 go.uber.org/multierr
 go.uber.org/zap
 gocloud.dev

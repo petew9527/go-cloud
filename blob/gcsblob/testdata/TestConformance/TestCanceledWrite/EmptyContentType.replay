@@ -1,12 +1,14 @@
 {
-  "Initial": "AQAAAA7b8cqUBJMmPwAA",
+  "Initial": "AQAAAA7cexipEiEwJgAA",
   "Version": "0.2",
   "Converter": {
     "ScrubBody": null,
     "ClearHeaders": [
       "^X-Goog-.*Encryption-Key$",
       "^Expires$",
-      "^Signature$"
+      "^Signature$",
+      "^X-Goog-Gcs-Idempotency-Token$",
+      "^User-Agent$"
     ],
     "RemoveRequestHeaders": [
       "^Authorization$",
@@ -35,7 +37,7 @@
   },
   "Entries": [
     {
-      "ID": "0ef45a53c6f0f908",
+      "ID": "16c20287b1ab547d",
       "Request": {
         "Method": "GET",
         "URL": "https://storage.googleapis.com/go-cloud-blob-test-bucket/blob-for-canceled-write",
@@ -44,7 +46,7 @@
             "gzip"
           ],
           "User-Agent": [
-            "go-cloud/blob/0.1.0"
+            "CLEARED"
           ]
         },
         "MediaType": "",
@@ -68,7 +70,7 @@
             "application/xml; charset=UTF-8"
           ],
           "Date": [
-            "Sat, 13 May 2023 18:14:44 GMT"
+            "Fri, 25 Aug 2023 21:48:25 GMT"
           ],
           "Expires": [
             "CLEARED"
@@ -77,14 +79,14 @@
             "UploadServer"
           ],
           "X-Guploader-Uploadid": [
-            "ADPycdsn6mIRWLrGyTQqZTbvsJBmq8dmI1UNn0bdW6yWgY5kBKw6gp8NBA7rAXaYlMexO6vrvZj-7Dx8sL3fusDrO3vs"
+            "ADPycduMAdJZtj93u6Gcr3cAm83mrJ0cgizE5W2Thz3Zq5IQC-xelQ2L9P2h2yUfmk7qGny7EUWLwMk9ch7OyNbakC_x-Ao13nx6"
           ]
         },
         "Body": "PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz48RXJyb3I+PENvZGU+Tm9TdWNoS2V5PC9Db2RlPjxNZXNzYWdlPlRoZSBzcGVjaWZpZWQga2V5IGRvZXMgbm90IGV4aXN0LjwvTWVzc2FnZT48RGV0YWlscz5ObyBzdWNoIG9iamVjdDogZ28tY2xvdWQtYmxvYi10ZXN0LWJ1Y2tldC9ibG9iLWZvci1jYW5jZWxlZC13cml0ZTwvRGV0YWlscz48L0Vycm9yPg=="
       }
     },
     {
-      "ID": "1ff315a654d1652d",
+      "ID": "4b37682d0d4151d1",
       "Request": {
         "Method": "GET",
         "URL": "https://storage.googleapis.com/go-cloud-blob-test-bucket/blob-for-canceled-write",
@@ -93,7 +95,7 @@
             "gzip"
           ],
           "User-Agent": [
-            "go-cloud/blob/0.1.0"
+            "CLEARED"
           ]
         },
         "MediaType": "",
@@ -117,7 +119,7 @@
             "application/xml; charset=UTF-8"
           ],
           "Date": [
-            "Sat, 13 May 2023 18:14:44 GMT"
+            "Fri, 25 Aug 2023 21:48:25 GMT"
           ],
           "Expires": [
             "CLEARED"
@@ -126,7 +128,7 @@
             "UploadServer"
           ],
           "X-Guploader-Uploadid": [
-            "ADPycdtchk8LusPGlxTIUKxGDYvpyJxJq9NofpUYUh4_vAtfWlc12zdTmul2vetVjvnAM9TOSAx7TOo-0dT6V7qQCbVcA6B_jkYS"
+            "ADPycdsT4xJLEPEQ7nEZRGYIgGRRRzgzUovC0HUIHQF7ujzCWBegbHn5W9Q7DE7mLflJxUyC1wWFlmMDYjMVyUdmCCOI404MhmSg"
           ]
         },
         "Body": "PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz48RXJyb3I+PENvZGU+Tm9TdWNoS2V5PC9Db2RlPjxNZXNzYWdlPlRoZSBzcGVjaWZpZWQga2V5IGRvZXMgbm90IGV4aXN0LjwvTWVzc2FnZT48RGV0YWlscz5ObyBzdWNoIG9iamVjdDogZ28tY2xvdWQtYmxvYi10ZXN0LWJ1Y2tldC9ibG9iLWZvci1jYW5jZWxlZC13cml0ZTwvRGV0YWlscz48L0Vycm9yPg=="

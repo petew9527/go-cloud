@@ -44,7 +44,7 @@ rootdir="$(pwd)"
 # new Go version. Some checks below we only run
 # for the latest Go version.
 latest_go_version=0
-if [[ $(go version) == *go1\.20* ]]; then
+if [[ $(go version) == *go1\.21* ]]; then
   latest_go_version=1
 fi
 
@@ -185,15 +185,6 @@ if [[ ${latest_go_version} -eq 1 ]]; then
     result=1
   }
 fi;
-
-
-# For pull requests, check if there are undeclared incompatible API changes.
-# Skip this if we're already going to fail since it is expensive.
-# CURRENTLY BROKEN
-# if [[ ${latest_go_version} -eq 1 ]] && [[ ${result} -eq 0 ]] && [[ ! -z "${GITHUB_HEAD_REF:-}" ]]; then
-  # echo
-  # ./internal/testing/check_api_change.sh || result=1;
-# fi
 
 
 echo
